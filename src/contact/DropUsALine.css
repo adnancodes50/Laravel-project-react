@@ -1,0 +1,34 @@
+.drop-us-bg {
+    background-color: rgb(228, 217, 217);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .line-decor {
+    width: 60px;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .line-decor::after,
+  .line-decor::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    top: 0;
+  }
+  
+  .line-decor::before {
+    left: -15px;
+  }
+  
+  .line-decor::after {
+    right: -15px;
+  }
+  
